@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+//css reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+//Colors
+
+//Primary
+
+$cyan: hsl(179, 62%, 43%);
+$bright-Yellow: hsl(71, 73%, 54%);
+
+//Neutral
+
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+//Typography
+
+//Body Copy
+
+$font-size: 16px;

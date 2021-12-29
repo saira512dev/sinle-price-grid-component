@@ -1,0 +1,144 @@
+@import 'settings';
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:$light-gray;
+}
+
+main{
+    width:300px;
+    display:grid;
+    grid-template-areas:"section1"
+    "section2"
+    "section3";
+    grid-gap:0px;
+}
+
+section{
+    padding:20px 10px 20px 20px;
+
+    h1{
+        font-size: 16px;
+        color:$light-gray;
+        margin-bottom: 20px;
+    }
+
+    p{
+        line-height: 1.5;
+        color:$grayish-blue;
+        font-size:13px;
+    }
+
+}
+
+.one{
+    border-radius:5px 5px 0 0 ;
+
+    grid-area:section1;
+    background:white;
+
+    h1{
+        color:$cyan;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size:14px;
+        color:$bright-Yellow;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin-right:20px;
+    }
+
+}
+
+.two{
+    grid-area:section2;
+    background:$cyan;
+
+
+   .sub{
+    color:$light-gray;
+    font-size:12px;
+   }
+
+   .dollar{
+    font-size:19px;
+    color:white;
+    font-weight: 700;
+   }
+
+   p{
+       color:white;
+       margin:10px 0;
+   }
+
+   button{
+       width:90%;
+       height:40px;
+       background: $bright-Yellow;
+       border-radius:5px;
+       border:none;
+       color:white;
+       font-size: 12px;
+       margin-top: 10px;
+       
+   }
+
+   
+}
+
+.three{
+    grid-area:section3;
+    background:rgba($cyan,0.7);
+    border-radius: 0 0 5px 5px;
+
+
+    p{
+        color:White;
+        margin-right:50px;
+        padding-right: 51px;
+    }
+
+    li{
+        list-style:none;
+        color:$light-gray;
+        font-size: 12px;
+        margin: 2px 0;
+    }
+}
+
+@media (min-width: 768px){
+    main{
+        width:600px;
+        grid-template-areas:"section1  section1"
+        "section2 section3";
+        
+         
+    } 
+
+    section{
+        padding:30px;
+    }
+
+    .one{
+        padding-right: 120px;
+    }
+
+    .two{
+        border-radius: 0 0 0 5px;
+    }
+
+    .three{
+        border-radius: 0 0 5px 0 ;
+    }
+}

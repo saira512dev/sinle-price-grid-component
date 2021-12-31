@@ -63,12 +63,14 @@ section {
   .two button {
     width: 90%;
     height: 40px;
-    background: #c0df34;
+    background: rgba(192, 223, 52, 0.8);
     border-radius: 5px;
     border: none;
     color: white;
     font-size: 12px;
     margin-top: 10px; }
+  .two:hover {
+    cursor: pointer; }
 
 .three {
   grid-area: section3;

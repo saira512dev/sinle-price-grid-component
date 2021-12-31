@@ -85,13 +85,17 @@ section{
    button{
        width:90%;
        height:40px;
-       background: $bright-Yellow;
+       background: rgba($bright-Yellow,0.8);
        border-radius:5px;
        border:none;
        color:white;
        font-size: 12px;
        margin-top: 10px;
        
+   }
+
+   &:hover{
+       cursor: pointer;
    }
 
    
